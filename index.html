@@ -16,8 +16,6 @@
         <title>Viajes Chile</title>
     </head>
     <body>
-        <!-- Usamos este Div para darle funcionalidad al menu Inicio y nos lleve al top de la página -->
-        <div id="top"></div>
 
         <!-- Header del documento con Navbar y Carrusel -->
         <header>
@@ -35,7 +33,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link text-light active" aria-current="page" href="#top">Inicio</a>
+                                <a class="nav-link text-light active" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light" href="#QuienesSomos">Quienes Somos</a>
@@ -56,13 +54,13 @@
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/img/carousel1.jpg" class="d-none d-md-block w-100" alt="...">
+                        <img src="./assets/img/carousel1.jpg" class="d-none d-md-block w-100 h-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/img/carousel2.jpg" class="d-none d-md-block w-100" alt="...">
+                        <img src="./assets/img/carousel2.jpg" class="d-none d-md-block w-100 h-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/img/carousel3.jpg" class="d-none d-md-block w-100" alt="...">
+                        <img src="./assets/img/carousel3.jpg" class="d-none d-md-block w-100 h-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -200,21 +198,27 @@
 
                 <h2>CONTACTO</h2>
 
-                <form id="frmContacto" class="mt-5 mx-2 mx-md-5 pe-1 px-md-3 text-start">
+                <form id="frmContact" class="mt-5 mx-2 mx-md-5 pe-1 px-md-3 text-start">
 
                     <div class="row mb-3">
                         <label for="name" class="col-form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" name="name">
+                        <input type="text" class="form-control" id="name" name="name" data-bs-toggle="tooltip" data-bs-placement="top"
+                               data-bs-custom-class="custom-tooltip"
+                               data-bs-title="Ingrese su Nombre y Apellido.">
                     </div>
 
                     <div class="row mb-3">
                         <label for="subject" class="col-form-label">Asunto</label>
-                        <input type="text" class="form-control" id="subject" name="subject">
+                        <input type="text" class="form-control" id="subject" name="subject" data-bs-toggle="tooltip" data-bs-placement="top"
+                               data-bs-custom-class="custom-tooltip"
+                               data-bs-title="Ingrese el Asunto de su contacto.">
                     </div>
 
                     <div class="row mb-3">
                         <label for="message" class="col-form-label">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" class="form-control"></textarea>
+                        <textarea id="message" name="message" rows="5" class="form-control" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  data-bs-custom-class="custom-tooltip"
+                                  data-bs-title="Ingrese el mensaje describiendo lo que necesita y dejando su información de contacto."></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-info text-light">Enviar</button>
@@ -255,6 +259,6 @@
         <!-- JS Bootstrap 5.3.2 -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <!-- JS owner (propios) -->
-        <script src="./assets/js/index.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>

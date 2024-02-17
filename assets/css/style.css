@@ -1,4 +1,5 @@
-
+/* Importo Fuente de letra Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -6,24 +7,49 @@
     border: 0;
 }
 
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Cambiar el color de la hamburguesa del toggler del navbar */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(250, 255, 249, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
     --bs-navbar-toggler-border-color: rgba(250, 255, 249, 1)!important;
 }
 
+/* Define el color de fondo y letra del Main */
 main {
     background-color: black;
     color: whitesmoke;
 }
 
-.bg-cian {
-    background-color: #10C5FA;
-}
-
+/* Justificar el texto de los parrafos en los artículos de la sección Quienes Somos */
 #QuienesSomos .texto p {
     text-align: justify;
 }
 
+/* Ajusta el tamaño de la imágen en las card para que sean todas iguales en altura. */
 .card-img-top {
     max-height: 220px!important;
+}
+
+/* algunos estilos propios para no aplicarlos en el código con el atributo style */
+.bg-cian {
+    background-color: #10C5FA;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: whitesmoke;
+    --bs-tooltip-color: black;
+}
+
+/* Aplicamos el weight 700 a la fuente para marcar el bold */
+.font-700 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
