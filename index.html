@@ -88,9 +88,9 @@
                 <h2>¿Quienes Somos?</h2>
 
                 <div class="container mt-5 py-5">
-                    <div class="row">
+                    <div class="row row-cols-1 row-cols-md-3">
 
-                        <div class="col pe-4">
+                        <div class="col pe-4 mb-3">
                             <article>
                                 <header class="bg-cian">
                                     <i class="fa-solid fa-plane"></i>
@@ -105,7 +105,7 @@
                             </article>
                         </div>
 
-                        <div class="col pe-4">
+                        <div class="col pe-4 mb-3">
                             <article>
                                 <section class="texto">
                                     <p>
@@ -118,7 +118,7 @@
                             </article>
                         </div>
 
-                        <div class="col">
+                        <div class="col pe-4 mb-3">
                             <article>
                                 <header class="bg-cian">
                                     <i class="fa-solid fa-route"></i>
@@ -138,20 +138,19 @@
             <!-- Fin Quienes Somos -->
 
             <!-- Sección Destacados -->
-            <section id="Destacados" class="text-center mx-5 py-5">
+            <section id="Destacados" class="text-center mx-1 mx-md-5 py-5">
 
                 <h2>DESTACADOS</h2>
 
                 <!-- Inicio Cards -->
-                <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
+                <div class="row row-cols-1 row-cols-md-4 g-4 me-2 mx-md-5 py-5 text-start">
 
                     <!-- Card 1 -->
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 bg-cian text-light">
                             <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text bg-cian">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
                     </div>
@@ -159,10 +158,9 @@
 
                     <!-- Card 2 -->
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 bg-cian text-light">
                             <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
@@ -171,11 +169,10 @@
 
                     <!-- Card 3 -->
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 bg-cian text-light">
                             <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text bg-cian">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                             </div>
                         </div>
                     </div>
@@ -183,11 +180,10 @@
 
                     <!-- Card 4 -->
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 bg-cian text-light">
                             <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text bg-cian">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
                     </div>
@@ -200,16 +196,52 @@
             <!-- Fin Destacados -->
 
             <!-- Sección Formulario de Contacto -->
-            <section id="Contacto"></section>
+            <section id="Contacto" class="text-center mx-1 me-4 mx-md-5 py-5">
+
+                <h2>CONTACTO</h2>
+
+                <form id="frmContacto" class="mt-5 mx-2 mx-md-5 pe-1 px-md-3 text-start">
+
+                    <div class="row mb-3">
+                        <label for="name" class="col-form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="subject" class="col-form-label">Asunto</label>
+                        <input type="text" class="form-control" id="subject" name="subject">
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="message" class="col-form-label">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-info text-light">Enviar</button>
+                </form>
+            </section>
             <!-- Fin Formulario de Contacto -->
 
         </main>
 
-        <footer id="piePagina">
+        <footer>
 
-            <div class="row col-12 col-md-6 col-lg-4">
+            <div class="expand-lg bg-cian text-white">
 
+                <div class="d-inline-flex col-12 mx-0 mx-md-5 py-4 text-middle text-center">
 
+                    <div class="col mx-5 ps-2 ps-md-5">
+                        VIAJES CHILE
+                    </div>
+
+                    <div class="col me-2 ms-md-auto pe-5 g-4">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-square-facebook"></i>
+                    </div>
+
+                </div>
 
             </div>
 
