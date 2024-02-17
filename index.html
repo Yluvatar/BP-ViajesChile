@@ -16,80 +16,155 @@
         <title>Viajes Chile</title>
     </head>
     <body>
+        <!-- Usamos este Div para darle funcionalidad al menu Inicio y nos lleve al top de la página -->
+        <div id="top"></div>
+
+        <!-- Header del documento con Navbar y Carrusel -->
+        <header>
+
+            <!-- Barra de Navegación -->
+            <nav class="navbar fixed-top navbar-expand-lg mx-md-5 px-md-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="#">
+                        <img src="./assets/img/viajes.svg" alt="logo" class="img-responsive d-inline-block align-text-top" width="35" height="28">
+                        Viajes Chile
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-light active" aria-current="page" href="#top">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#QuienesSomos">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#Destacados">Destacados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#Contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Fin Barra de Navegación -->
+
+            <!-- Inicio del Carrusel -->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/carousel1.jpg" class="d-none d-md-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/carousel2.jpg" class="d-none d-md-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/carousel3.jpg" class="d-none d-md-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Fin del Carrusel -->
+
+        </header>
+        <!-- Fin Header con Navbar y Carrusel -->
 
         <!-- Main principal de la página -->
-        <main class="container">
+        <main class="container-fluid">
 
-            <!-- Header del documento Navbar y Carrusel -->
-            <header>
+            <!-- Sección Quienes Somos -->
+            <section id="QuienesSomos" class="text-center mx-5 pt-5">
 
-                <!-- Barra de Navegación -->
-                <nav class="navbar fixed-top navbar-expand-lg mx-md-5 px-md-5">
-                    <div class="container-fluid">
-                        <a class="navbar-brand text-light" href="#">
-                            <img src="./assets/img/viajes.svg" alt="logo" class="img-responsive d-inline-block align-text-top" width="35" height="28">
-                            Viajes Chile
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link text-light active" aria-current="page" href="#">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">Quienes Somos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">Destacados</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">Contacto</a>
-                                </li>
-                            </ul>
+                <h2>¿Quienes Somos?</h2>
+
+                <div class="container mt-5 py-5">
+                    <div class="row">
+
+                        <div class="col pe-4">
+                            <article>
+                                <header class="bg-cian">
+                                    <i class="fa-solid fa-plane"></i>
+                                </header>
+                                <section class="texto">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet ante eu mattis faucibus. In vel cursus purus, eget interdum nisl. Praesent nunc lectus, tempor ac dapibus vel, mollis at felis. Proin mi dolor, pharetra venenatis lobortis id, blandit sit amet justo. Curabitur mollis lacus porttitor porttitor pulvinar. Fusce at urna faucibus, vehicula lectus quis, malesuada nisl. Nullam viverra vitae erat id interdum. Nam mollis in orci at rhoncus. Aenean consectetur sollicitudin odio in dictum.
+
+                                        Cras cursus convallis arcu. Etiam hendrerit justo eget sodales ullamcorper. Proin et pulvinar odio. Mauris varius, velit vitae pulvinar facilisis, sapien metus dictum lacus, a.
+                                    </p>
+                                </section>
+                            </article>
                         </div>
+
+                        <div class="col pe-4">
+                            <article>
+                                <section class="texto">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sapien libero, aliquam sit amet vestibulum sit amet, commodo vitae urna. Mauris eros metus, finibus sed purus at, vulputate interdum justo. Cras egestas, metus scelerisque venenatis scelerisque, mi augue tempus dolor, id sodales diam diam a felis. Integer elementum sed risus vel posuere. Sed sed justo turpis. Cras in purus augue. Sed turpis lorem, rhoncus iaculis pharetra sed, cursus at leo. Vivamus in vulputate turpis. Suspendisse finibus elit eu elit consectetur venenatis. Aenean fringilla eleifend augue, eget luctus ante tempus eget. Donec iaculis at augue sollicitudin tristique. Integer aliquet orci gravida.
+                                    </p>
+                                </section>
+                                <footer class="bg-cian">
+                                    <i class="fa-solid fa-mountain"></i>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article>
+                                <header class="bg-cian">
+                                    <i class="fa-solid fa-route"></i>
+                                </header>
+                                <section class="texto">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta tellus vitae massa mattis rutrum. Vestibulum arcu est, lobortis eu risus eu, ornare sagittis purus. Donec aliquet arcu euismod faucibus suscipit. Nam faucibus tempus eros. Cras nulla libero, porttitor ultrices ex sit amet, facilisis lacinia ligula. Aenean eget accumsan mi. Nam neque nisl, viverra viverra lacus et, feugiat faucibus mi. Aliquam urna ligula, convallis et elit et, varius volutpat neque. In suscipit dapibus enim, et malesuada sem lacinia quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in lorem turpis. Praesent efficitur, eros at scelerisque eleifend, magna ligula maximus.
+                                    </p>
+                                </section>
+                            </article>
+                        </div>
+
                     </div>
-                </nav>
-
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
 
-            </header>
+            </section>
+            <!-- Fin Quienes Somos -->
 
-            <section></section>
+            <!-- Sección Destacados -->
+            <section id="Destacados"></section>
+            <!-- Fin Destacados -->
 
-            <section></section>
-
-            <section></section>
-
-            <footer></footer>
+            <!-- Sección Formulario de Contacto -->
+            <section id="Contacto"></section>
+            <!-- Fin Formulario de Contacto -->
 
         </main>
 
+        <footer id="piePagina">
+
+            <div class="row col-12 col-md-6 col-lg-4">
+
+
+
+            </div>
+
+        </footer>
+
         <!-- Scripts -->
+        <!-- JS Jquery 3.7.1 -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <!-- JS Popper 2.11.8 -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <!-- JS Bootstrap 5.3.2 -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <!-- JS owner (propios) -->
+        <script src="./assets/js/index.js"></script>
     </body>
 </html>
