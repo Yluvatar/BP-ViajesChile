@@ -23,3 +23,7 @@ main {
 #QuienesSomos .texto p {
     text-align: justify;
 }
+
+.card-img-top {
+    max-height: 220px!important;
+}
